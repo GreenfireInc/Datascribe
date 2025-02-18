@@ -3,18 +3,62 @@
     :class="menuType"
     class="flex flex-col items-stretch bg-white shadow-md border-r border-gray-300"
   >
-    <router-link v-ripple to="/directories">
+    <!-- //<router-link to="/devices">Devices</router-link> -->
+    <router-link v-ripple to="/devices">
       <span class="icon">
-        <files-icon :color="pathColor('directories')" />
+        <files-icon :color="pathColor('devices')" />
       </span>
-      <span class="link-text">Settings</span>
+      <span class="link-text">Devices</span>
     </router-link>
-    <router-link v-ripple to="/test">
+
+    <!-- //<router-link to="/download">Download</router-link> -->
+    <router-link v-ripple to="/download">
       <span class="icon">
         <wallet-icon :color="pathColor('test')" />
       </span>
-      <span class="link-text">Settings</span>
+      <span class="link-text">Download</span>
     </router-link>
+
+    <!-- //<router-link to="/verify">Verify</router-link> -->
+    <router-link v-ripple to="/verify">
+      <span class="icon">
+        <wallet-icon :color="pathColor('test')" />
+      </span>
+      <span class="link-text">Verify</span>
+    </router-link>
+
+    <!-- //<router-link to="/gallery">Gallery</router-link> -->
+    <router-link v-ripple to="/gallery">
+      <span class="icon">
+        <wallet-icon :color="pathColor('test')" />
+      </span>
+      <span class="link-text">Gallery</span>
+    </router-link>
+
+    <!-- //<router-link to="/writing">Writing</router-link> -->
+    <router-link v-ripple to="/writing">
+      <span class="icon">
+        <wallet-icon :color="pathColor('test')" />
+      </span>
+      <span class="link-text">Writing</span>
+    </router-link>
+
+    <!-- //<router-link to="/history">History</router-link> -->
+    <router-link v-ripple to="/history">
+      <span class="icon">
+        <wallet-icon :color="pathColor('test')" />
+      </span>
+      <span class="link-text">History</span>
+    </router-link>
+
+    <!-- //<router-link to="/pxe">PXE</router-link> -->
+    <router-link v-ripple to="/pxe">
+      <span class="icon">
+        <wallet-icon :color="pathColor('test')" />
+      </span>
+      <span class="link-text">PXE</span>
+    </router-link>
+
     <router-link v-ripple to="/settings/user">
       <span class="icon">
         <settings-icon :color="pathColor('settings')" />
