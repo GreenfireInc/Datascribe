@@ -47,6 +47,8 @@ import Gallery from '@/views/Gallery.vue'
 import Writing from '@/views/Writing.vue'
 import History from '@/views/History.vue'
 import PXE from '@/views/PXE.vue'
+import Earn from '@/views/Earn.vue'
+import Settings from '@/views/Settings.vue'
 
 Vue.use(Router)
 
@@ -88,6 +90,16 @@ export default new Router({
       path: '/pxe',
       name: 'PXE',
       component: PXE
+    },
+    {
+      path: '/earn',
+      name: 'Earn',
+      component: Earn
+    },
+    {
+      path: '/settings/:activeTab',
+      name: 'Settings',
+      component: Settings
     }
     // Add other routes here
   ]

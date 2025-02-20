@@ -59,6 +59,14 @@
       <span class="link-text">PXE</span>
     </router-link>
 
+    <!-- //<router-link to="/earn">Earn</router-link> -->
+    <router-link v-ripple to="/earn">
+      <span class="icon">
+        <wallet-icon :color="pathColor('test')" />
+      </span>
+      <span class="link-text">Earn</span>
+    </router-link>
+
     <router-link v-ripple to="/settings/user">
       <span class="icon">
         <settings-icon :color="pathColor('settings')" />
